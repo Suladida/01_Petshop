@@ -33,14 +33,14 @@ def find_pet_by_name(pet_shop_list, input_name):
         if pet_name['name'] == input_name:
             return pet_name
             pet_name.append(pet)
-    return pet_name
+    return None
 
 
 
 
 
 
-# # #SKIPPED NOs. 11 - 13. 
+# # #SKIPPED NOs. 12 - 13. 
 
 
 
