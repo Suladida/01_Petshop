@@ -25,25 +25,30 @@ def get_pets_by_breed(pet_shop_list, breed):
         if pet['breed'] == breed:
             pet_breed.append(pet)
     return pet_breed
-    
+
+def find_pet_by_name(pet_shop_list, input_name):
+    pet_name = 0
+    for pet in pet_shop_list["pets"]:
+        pet_name = pet
+        if pet_name['name'] == input_name:
+            return pet_name
+            pet_name.append(pet)
+    return pet_name
 
 
-# #Will Not Work.
-# def find_pet_by_name(pet_shop_list, input_name):
-#     pet_name = []
-#     for pet in pet_shop_list["pets"]:
-#         if pet["name"] == input_name:
-#             pet_name.append(pet)
-#     return pet_name
 
 
-#SKIPPED NOs. 10 - 13. 
+
+
+# # #SKIPPED NOs. 11 - 13. 
+
+
+
 
 
 
 def get_customer_cash(customer_list):
     return customer_list["cash"]
-
 
 def remove_customer_cash(customer, cash):
     customer["cash"] -= cash
@@ -51,7 +56,6 @@ def remove_customer_cash(customer, cash):
 def get_customer_pet_count(customer):
     total_pets = len(customer["pets"])
     return total_pets
-
 
 def add_pet_to_customer(customer, new_pet):
     customer["pets"].append(new_pet)
