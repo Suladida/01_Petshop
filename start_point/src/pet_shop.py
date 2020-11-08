@@ -40,21 +40,8 @@ def remove_pet_by_name(pet_shop_list, input_name):
         if pet["name"] == input_name:
             pet_shop_list["pets"].remove(pet)
 
-
-
-
-
-
-
-
-# del(meals["breakfast"])
-
-# # #SKIPPED NOs. 12 - 13. 
-
-
-
-
-
+def add_pet_to_stock(pet_shop_list, new_pet):
+    pet_shop_list["pets"].append(new_pet)
 
 def get_customer_cash(customer_list):
     return customer_list["cash"]
