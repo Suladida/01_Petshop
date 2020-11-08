@@ -25,4 +25,28 @@ def get_pets_by_breed(pet_shop_list, breed):
         if pet['breed'] == breed:
             pet_breed.append(pet)
     return pet_breed
+    
+
+
+# #Will Not Work.
+# def find_pet_by_name(pet_shop_list, input_name):
+#     pet_name = []
+#     for pet in pet_shop_list["pets"]:
+#         if pet["name"] == input_name:
+#             pet_name.append(pet)
+#     return pet_name
+
+
+#SKIPPED NOs. 10 - 13. 
+
+
+
+def get_customer_cash(customer_list):
+    return customer_list["cash"]
+
+
+
+
+
+
 
