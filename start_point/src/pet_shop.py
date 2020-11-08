@@ -35,10 +35,19 @@ def find_pet_by_name(pet_shop_list, input_name):
             pet_name.append(pet)
     return None
 
+def remove_pet_by_name(pet_shop_list, input_name):
+    for pet in pet_shop_list["pets"]:
+        if pet["name"] == input_name:
+            pet_shop_list["pets"].remove(pet)
 
 
 
 
+
+
+
+
+# del(meals["breakfast"])
 
 # # #SKIPPED NOs. 12 - 13. 
 

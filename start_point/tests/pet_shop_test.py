@@ -117,12 +117,11 @@ class TestPetShop(unittest.TestCase):
     def test_find_pet_by_name__returns_pet(self):
         pet = find_pet_by_name(self.cc_pet_shop, "Arthur")
         self.assertEqual("Arthur", pet["name"])
-#HEREEEEEEEEEEEEEEE
+
     def test_find_pet_by_name__returns_None(self):
         pet = find_pet_by_name(self.cc_pet_shop, "Fred")
         self.assertIsNone(pet)
 
-    @unittest.skip("delete this line to run the test")
     def test_remove_pet_by_name(self):
         remove_pet_by_name(self.cc_pet_shop, "Arthur")
         pet = find_pet_by_name(self.cc_pet_shop,"Arthur")
